@@ -2,12 +2,16 @@
 *{
   color: #3C373B;
 }
+/* body{
+  padding: 0;
+  margin: 0;
+} */
 
 h1 {
   font-family: "Gaegu", cursive;
   margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 60px;
+  font-size: 60px;  
   text-align: center;
 }
 
@@ -36,6 +40,7 @@ p {
   font-family: roboto;
   padding: 10px;
   line-height: 1.4;
+  margin: 0;
 }
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -45,10 +50,11 @@ p {
 */
 img {
   border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
-
-.content-row {
-  display: flex;
+main{
+  background: #9ba1a1;
 }
 
 .content-row div {
@@ -58,7 +64,7 @@ img {
 
 .container {
   /*======= width property yaratın. Değerini 605px olarak atayın */
-  width: 800px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -80,7 +86,18 @@ img {
   background-color: white;
   color: #e79947;
 }
-
+.container header{
+  text-align: center;
+}
+.content-img{
+  width: 38%;
+  display: inline-block;
+  padding: 16px;
+}
+.content-text{
+  width: 56%;
+  display: inline-block;
+}
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
@@ -113,7 +130,7 @@ footer {
 footer .footer-content {
   margin: 0 auto;
   /*======= width property yaratın. Değerini 605px olarak atayın */
-  width: 605px;
+  width: 750px;
 }
 
 footer .footer-content h3 {
@@ -130,7 +147,11 @@ footer nav {
   color: black;
   text-decoration: underline;
 */
-
+footer a {
+  margin: 10px;
+  color: black;
+  text-decoration:none
+}
 footer nav a:first-child {
   margin-left: 0;
 }
@@ -138,7 +159,7 @@ footer nav a:first-child {
 /*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:
   color: white;
 */
-footer .nov a:hover {
+footer .nav a:hover {
   color: white;
 }
 footer .footer-content .copyright {
